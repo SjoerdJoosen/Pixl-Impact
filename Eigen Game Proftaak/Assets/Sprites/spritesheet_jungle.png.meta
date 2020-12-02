@@ -4,46 +4,46 @@ TextureImporter:
   internalIDToNameTable:
   - first:
       213: 6476645606930508753
-    second: spritesheet_jungle_0
+    second: Monkeh
   - first:
       213: -6187773385499365542
-    second: spritesheet_jungle_1
+    second: twokan
   - first:
       213: 7739212845957303435
-    second: spritesheet_jungle_2
+    second: snek
   - first:
       213: -7158773887371092528
-    second: spritesheet_jungle_3
+    second: magic box
   - first:
       213: -2937466313017153883
-    second: spritesheet_jungle_4
+    second: checkpoint flag
   - first:
       213: 2318625758120411848
-    second: spritesheet_jungle_5
+    second: jump pad
   - first:
       213: 8486769778280177473
-    second: spritesheet_jungle_6
+    second: checkpoint stick
   - first:
       213: 8627454201801387622
-    second: spritesheet_jungle_0
+    second: Monkeh
   - first:
       213: -6196829735679800522
-    second: spritesheet_jungle_1
+    second: twokan
   - first:
       213: -1103238396001984496
-    second: spritesheet_jungle_2
+    second: snek
   - first:
       213: 6059048755730978322
-    second: spritesheet_jungle_3
+    second: magic box
   - first:
       213: 8968600057586122766
-    second: spritesheet_jungle_4
+    second: checkpoint flag
   - first:
       213: -2148768459302047883
-    second: spritesheet_jungle_5
+    second: jump pad
   - first:
       213: 5849225423399099212
-    second: spritesheet_jungle_6
+    second: checkpoint stick
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -141,7 +141,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: spritesheet_jungle_0
+      name: Monkeh
       rect:
         serializedVersion: 2
         x: 0
@@ -149,11 +149,7 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-<<<<<<< Updated upstream
       pivot: {x: 0, y: 0}
-=======
-      pivot: {x: 0.5, y: 0.5}
->>>>>>> Stashed changes
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -166,7 +162,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spritesheet_jungle_1
+      name: twokan
       rect:
         serializedVersion: 2
         x: 32
@@ -174,24 +170,20 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-<<<<<<< Updated upstream
       pivot: {x: 0, y: 0}
-=======
-      pivot: {x: 0.5, y: 0.5}
->>>>>>> Stashed changes
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 63b4a370030700aa0800000000000000
-      internalID: -6196829735679800522
+      spriteID: a5fa1bed3ec902aa0800000000000000
+      internalID: -6187773385499365542
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spritesheet_jungle_2
+      name: snek
       rect:
         serializedVersion: 2
         x: 0
@@ -199,24 +191,20 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-<<<<<<< Updated upstream
       pivot: {x: 0, y: 0}
-=======
-      pivot: {x: 0.5, y: 0.5}
->>>>>>> Stashed changes
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 010eab7268280b0f0800000000000000
-      internalID: -1103238396001984496
+      spriteID: b8ccc6c4415376b60800000000000000
+      internalID: 7739212845957303435
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spritesheet_jungle_3
+      name: magic box
       rect:
         serializedVersion: 2
         x: 32
@@ -224,24 +212,20 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-<<<<<<< Updated upstream
       pivot: {x: 0, y: 0}
-=======
-      pivot: {x: 0.5, y: 0.5}
->>>>>>> Stashed changes
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2161e1abdb0161450800000000000000
-      internalID: 6059048755730978322
+      spriteID: 0dd57e7041de6ac90800000000000000
+      internalID: -7158773887371092528
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spritesheet_jungle_4
+      name: checkpoint flag
       rect:
         serializedVersion: 2
         x: 0
@@ -249,34 +233,20 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-<<<<<<< Updated upstream
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-=======
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape:
-      - - {x: -16, y: -16}
-        - {x: -16, y: -15}
-        - {x: -16, y: -16}
-        - {x: -16, y: -16}
-        - {x: -16, y: -16}
-        - {x: -16, y: -16}
-        - {x: -16, y: -16}
->>>>>>> Stashed changes
       tessellationDetail: 0
       bones: []
-      spriteID: e0008f41c3ed67c70800000000000000
-      internalID: 8968600057586122766
+      spriteID: 5a6afe0a3f50c37d0800000000000000
+      internalID: -2937466313017153883
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spritesheet_jungle_5
+      name: jump pad
       rect:
         serializedVersion: 2
         x: 32
@@ -284,24 +254,20 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-<<<<<<< Updated upstream
       pivot: {x: 0, y: 0}
-=======
-      pivot: {x: 0.5, y: 0.5}
->>>>>>> Stashed changes
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 57fecbe887a0e22e0800000000000000
-      internalID: -2148768459302047883
+      spriteID: 8c286d7a7d96d2020800000000000000
+      internalID: 2318625758120411848
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spritesheet_jungle_6
+      name: checkpoint stick
       rect:
         serializedVersion: 2
         x: 0
@@ -309,25 +275,14 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-<<<<<<< Updated upstream
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-=======
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape:
-      - - {x: -16, y: -16}
-        - {x: -16, y: -16}
-        - {x: -16, y: -16}
-        - {x: -16, y: -16}
->>>>>>> Stashed changes
       tessellationDetail: 0
       bones: []
-      spriteID: c4b13e4388f9c2150800000000000000
-      internalID: 5849225423399099212
+      spriteID: 14f19e4062017c570800000000000000
+      internalID: 8486769778280177473
       vertices: []
       indices: 
       edges: []
@@ -335,7 +290,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 280378e1b75b7514b866cb024cb6f216
     internalID: 0
     vertices: []
     indices: 
