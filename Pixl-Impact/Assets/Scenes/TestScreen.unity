@@ -172,7 +172,7 @@ BoxCollider2D:
   m_GameObject: {fileID: 53205578}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: a7ee6103a4888eb42ad3a85215320c6a, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -449,7 +449,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.8356762, y: 3.4275517, z: -10}
+  m_LocalPosition: {x: 1.8559456, y: 3.4275517, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -618,7 +618,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 1
-  m_Offset: {x: 42.68694, y: 5.2644043}
+  m_Offset: {x: 42.68694, y: 3.441637}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -629,7 +629,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 120.784996, y: 25.673706}
+  m_Size: {x: 120.784996, y: 22.028172}
   m_EdgeRadius: 0
 --- !u!66 &1219486270
 CompositeCollider2D:
@@ -654,16 +654,16 @@ CompositeCollider2D:
     - - X: 1030794075
         Y: -75724488
       - X: 1030794075
-        Y: 181012576
+        Y: 144557232
       - X: -177055584
-        Y: 181012283
+        Y: 144556939
       - X: -177055291
         Y: -75724488
   m_CompositePaths:
     m_Paths:
     - - {x: 103.079384, y: -7.5724487}
-      - {x: 103.079384, y: 18.101257}
-      - {x: -17.705559, y: 18.101198}
+      - {x: 103.079384, y: 14.455724}
+      - {x: -17.705559, y: 14.455665}
       - {x: -17.7055, y: -7.5724487}
   m_VertexDistance: 0.0005
   m_OffsetDistance: 0.00005
@@ -4869,13 +4869,13 @@ CompositeCollider2D:
         Y: -79999959
       - X: 80000100
         Y: -80000100
-      - X: 190000041
+      - X: 188750041
         Y: -80000100
-      - X: 190000100
+      - X: 188750100
         Y: -80000041
-      - X: 190000100
+      - X: 188750100
         Y: -69999959
-      - X: 190000041
+      - X: 188750041
         Y: -69999900
       - X: 188125092
         Y: -69999900
@@ -5417,8 +5417,8 @@ CompositeCollider2D:
       - {x: 26.12499, y: 5.8749914}
       - {x: 26.124998, y: 5.0624866}
       - {x: 26.187511, y: 4.99999}
-    - - {x: 18.99998, y: -8.000004}
-      - {x: 18.999975, y: -6.9999905}
+    - - {x: 18.87498, y: -8.000004}
+      - {x: 18.874975, y: -6.9999905}
       - {x: 18.81251, y: -6.999961}
       - {x: 18.812532, y: -0.99999}
       - {x: 18.87501, y: -0.9999607}
