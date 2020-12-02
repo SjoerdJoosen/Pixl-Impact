@@ -149,7 +149,11 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
+<<<<<<< Updated upstream
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Stashed changes
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -170,7 +174,11 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
+<<<<<<< Updated upstream
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Stashed changes
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -191,7 +199,11 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
+<<<<<<< Updated upstream
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Stashed changes
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -212,7 +224,11 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
+<<<<<<< Updated upstream
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Stashed changes
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -233,10 +249,24 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
+<<<<<<< Updated upstream
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
+=======
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -16, y: -16}
+        - {x: -16, y: -15}
+        - {x: -16, y: -16}
+        - {x: -16, y: -16}
+        - {x: -16, y: -16}
+        - {x: -16, y: -16}
+        - {x: -16, y: -16}
+>>>>>>> Stashed changes
       tessellationDetail: 0
       bones: []
       spriteID: e0008f41c3ed67c70800000000000000
@@ -254,7 +284,11 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
+<<<<<<< Updated upstream
       pivot: {x: 0, y: 0}
+=======
+      pivot: {x: 0.5, y: 0.5}
+>>>>>>> Stashed changes
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -275,10 +309,21 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
+<<<<<<< Updated upstream
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
+=======
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -16, y: -16}
+        - {x: -16, y: -16}
+        - {x: -16, y: -16}
+        - {x: -16, y: -16}
+>>>>>>> Stashed changes
       tessellationDetail: 0
       bones: []
       spriteID: c4b13e4388f9c2150800000000000000
