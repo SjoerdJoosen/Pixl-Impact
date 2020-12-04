@@ -14,6 +14,8 @@ public class PlayerMovement : MonoBehaviour {
     public Transform feet;
     public LayerMask groundLayers;
 
+    [HideInInspector] public bool isFacingRight = false;
+
     private void Update() {
         mx = Input.GetAxis("Horizontal");
 
@@ -29,8 +31,10 @@ public class PlayerMovement : MonoBehaviour {
 
         if (mx > 0f) {
             transform.localScale = new Vector3(-1.75f, 1.75f, 1.75f);
+            isFacingRight = true;
         } else if (mx < 0f) {
             transform.localScale = new Vector3(1.75f, 1.75f, 1.75f);
+            isFacingRight = false;
         }
     }
 
