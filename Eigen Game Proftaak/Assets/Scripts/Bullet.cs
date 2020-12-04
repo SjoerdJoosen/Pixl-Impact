@@ -1,4 +1,6 @@
-﻿using System.Collections;
+﻿//this is a test comment thingy ~bart
+
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
