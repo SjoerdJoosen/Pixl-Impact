@@ -31,4 +31,18 @@ public class PlayerDeath : MonoBehaviour
             respawnPoint = collision.transform.position;
         }
     }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Enemy"))
+        {
+            // Destroy(gameObject);
+            transform.position = respawnPoint;
+        }
+        if (collision.gameObject.tag == "Checkpoint")
+        {
+            // LevelManager.instance.Respawn(); 
+            respawnPoint = collision.transform.position;
+        }
+    }
 }

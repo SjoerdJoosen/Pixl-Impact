@@ -4,46 +4,46 @@ TextureImporter:
   internalIDToNameTable:
   - first:
       213: 6476645606930508753
-    second: spritesheet_jungle_0
+    second: Monkey
   - first:
       213: -6187773385499365542
-    second: spritesheet_jungle_1
+    second: Toucan
   - first:
       213: 7739212845957303435
-    second: spritesheet_jungle_2
+    second: Snake
   - first:
       213: -7158773887371092528
-    second: spritesheet_jungle_3
+    second: Chest
   - first:
       213: -2937466313017153883
-    second: spritesheet_jungle_4
+    second: Flag
   - first:
       213: 2318625758120411848
-    second: spritesheet_jungle_5
+    second: Spring
   - first:
       213: 8486769778280177473
-    second: spritesheet_jungle_6
+    second: Flag Pole
   - first:
       213: 8627454201801387622
-    second: spritesheet_jungle_0
+    second: Monkey
   - first:
       213: -6196829735679800522
-    second: spritesheet_jungle_1
+    second: Toucan
   - first:
       213: -1103238396001984496
-    second: spritesheet_jungle_2
+    second: Snake
   - first:
       213: 6059048755730978322
-    second: spritesheet_jungle_3
+    second: Chest
   - first:
       213: 8968600057586122766
-    second: spritesheet_jungle_4
+    second: Flag
   - first:
       213: -2148768459302047883
-    second: spritesheet_jungle_5
+    second: Spring
   - first:
       213: 5849225423399099212
-    second: spritesheet_jungle_6
+    second: Flag Pole
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -141,7 +141,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: spritesheet_jungle_0
+      name: Monkey
       rect:
         serializedVersion: 2
         x: 0
@@ -149,14 +149,140 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 1.51e-43, y: 1.47e-43}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 1dbef216ddaa1e950800000000000000
-      internalID: 6476645606930508753
+      spriteID: 66ea256e2efdab770800000000000000
+      internalID: 8627454201801387622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Toucan
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5fa1bed3ec902aa0800000000000000
+      internalID: -6187773385499365542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Snake
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8ccc6c4415376b60800000000000000
+      internalID: 7739212845957303435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chest
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0dd57e7041de6ac90800000000000000
+      internalID: -7158773887371092528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flag
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a6afe0a3f50c37d0800000000000000
+      internalID: -2937466313017153883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spring
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c286d7a7d96d2020800000000000000
+      internalID: 2318625758120411848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Flag Pole
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14f19e4062017c570800000000000000
+      internalID: 8486769778280177473
       vertices: []
       indices: 
       edges: []
@@ -164,7 +290,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 4a75cc606defb274381fc8b29193c67a
     internalID: 0
     vertices: []
     indices: 
