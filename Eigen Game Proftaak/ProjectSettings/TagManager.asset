@@ -9,6 +9,7 @@ TagManager:
   - Checkpoint
   - Bullet
   - Enemy
+  - Coin
   layers:
   - Default
   - TransparentFX
