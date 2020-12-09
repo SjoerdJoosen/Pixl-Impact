@@ -58,6 +58,3 @@ sysinfo.txt
 # Crashlytics generated file
 crashlytics-build.properties
 
-*packages-lock.json
-Eigen Game Proftaak/Assets/Prefabs/PatrollingMonkey.prefab.meta
-Eigen Game Proftaak/Assets/Prefabs/PatrollingEnemy.prefab.meta
