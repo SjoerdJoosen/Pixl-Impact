@@ -5,7 +5,7 @@ using UnityEngine;
 public class ArduinoManger : MonoBehaviour
 {
     ArduinoMessageHandler messageHandler;
-    HealthManger health;
+    //HealthManager health = GameObject.FindGameObjectWithTag("healthManager")
     private int currentHealth;
     // Start is called before the first frame update
     void Start()
@@ -16,6 +16,6 @@ public class ArduinoManger : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        currentHealth = health.CurrentHealth;
+        
     }
 }
