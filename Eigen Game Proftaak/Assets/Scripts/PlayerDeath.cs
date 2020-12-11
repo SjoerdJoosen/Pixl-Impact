@@ -9,13 +9,12 @@ public class PlayerDeath : MonoBehaviour
     public Tilemap DeathTiles;
     public ContactPoint2D[] contacts = new ContactPoint2D[1];
     public Vector3 respawnPoint;
-    public HealthManager playerHealth;
+    public HealthManger playerHealth;
 
 
     private void Start()
     {
         respawnPoint = transform.position;
-        playerHealth = GameObject.FindGameObjectWithTag("PlayerPropertyManager").GetComponent<HealthManager>();
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -25,7 +24,6 @@ public class PlayerDeath : MonoBehaviour
            // Destroy(gameObject);
             // LevelManager.instance.Respawn();
             transform.position = respawnPoint;
-            playerHealth.damage(1);
         }
 
         if (collision.gameObject.tag == "Checkpoint")
@@ -37,16 +35,16 @@ public class PlayerDeath : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("Enemy"))
+        if (collision.gameObject.CompareTag("Enemy")|| collision.gameObject.tag == "Checkpoint")
         {
             // Destroy(gameObject);
             transform.position = respawnPoint;
-            playerHealth.damage(1);
+            //playerHealth.damage(1);
         }
-        if (collision.gameObject.tag == "Checkpoint")
-        {
-            // LevelManager.instance.Respawn(); 
-            respawnPoint = collision.transform.position;
-        }
+        //if (collision.gameObject.tag == "Checkpoint")
+        //{
+        //    // LevelManager.instance.Respawn(); 
+        //    respawnPoint = collision.transform.position;
+        //}
     }
 }

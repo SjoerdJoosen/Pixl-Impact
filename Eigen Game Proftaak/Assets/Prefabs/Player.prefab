@@ -42,10 +42,11 @@ GameObject:
   - component: {fileID: 2537828042763982203}
   - component: {fileID: 2537828042763982180}
   - component: {fileID: 2537828042763982182}
-  - component: {fileID: 2537828042763982183}
   - component: {fileID: 2537828042763982176}
+  - component: {fileID: 2537828042763982183}
   - component: {fileID: 2537828042763982202}
   - component: {fileID: 154674303}
+  - component: {fileID: 545497133}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -166,6 +167,25 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 4
+--- !u!95 &2537828042763982176
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2537828042763982177}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 30b398fbcfa2ff448bea62e9372a2361, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!114 &2537828042763982183
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -187,25 +207,6 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 256
   isFacingRight: 0
---- !u!95 &2537828042763982176
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2537828042763982177}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 30b398fbcfa2ff448bea62e9372a2361, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!114 &2537828042763982202
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -220,6 +221,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DeathTiles: {fileID: 0}
   respawnPoint: {x: 0, y: 0, z: 0}
+  playerHealth: {fileID: 0}
 --- !u!114 &154674303
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -236,6 +238,19 @@ MonoBehaviour:
   firingPoint: {fileID: 13429381}
   bulletPrefab: {fileID: 2657030202490821260, guid: 6fd7b11ce354b5343bc80142a4030cf7,
     type: 3}
+--- !u!114 &545497133
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2537828042763982177}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 055d1dd16e58a734ea3bc9ed2844efca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  transition: {fileID: 0}
 --- !u!1 &2537828043498608568
 GameObject:
   m_ObjectHideFlags: 0
