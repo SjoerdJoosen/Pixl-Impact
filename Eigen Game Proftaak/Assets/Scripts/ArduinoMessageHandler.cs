@@ -8,13 +8,13 @@ public class ArduinoMessageHandler : MonoBehaviour
 {
     //port fields
     private SerialPort myPort;
-    private string portName = "COM4";
+    public string portName = "COM4";
     private char startChar = '#';
     private char endChar = '%';
 
 
     //Constructor
-    private ArduinoMessageHandler()
+    public ArduinoMessageHandler()
     {
         startPortCommunication();
     }
@@ -26,6 +26,7 @@ public class ArduinoMessageHandler : MonoBehaviour
         {
             myPort.Write(startChar + message + endChar); //"#AN_EXAMPLE_MESSAGE%"
         }
+            UnityEngine.Debug.Log(message);
     }
 
     private void startPortCommunication()
