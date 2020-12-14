@@ -9,6 +9,7 @@ public class PlayerMovement : MonoBehaviour {
     public Animator Anim;
 
     public float jumpForce = 20f;
+    public float springBounce = 20f;
 
     float mx;
     public Transform feet;
@@ -65,6 +66,14 @@ public class PlayerMovement : MonoBehaviour {
         if (collision.CompareTag("Coin"))
         {
             Destroy(collision.gameObject);
+        }
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Spring"))
+        {
+            rb.velocity = Vector2.up * springBounce;
         }
     }
 }
