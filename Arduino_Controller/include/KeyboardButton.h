@@ -1,3 +1,5 @@
+#ifndef KEYBOARDBUTTON_H
+#define KEYBOARDBUTTON_H
 #include <Arduino.h>
 #include <Keyboard.h>
 
@@ -17,3 +19,5 @@ class KeyboardButton{
 
 
 };
+
+#endif

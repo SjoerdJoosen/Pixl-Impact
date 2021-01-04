@@ -8,12 +8,16 @@ KeyboardButton::KeyboardButton(int buttonPin, char keyToPress){
 
 void KeyboardButton::init(){
     pinMode(buttonPin, INPUT);
+    
+    //if the keyboard has already been started it should skip starting the keyboard again
+    #ifndef KEYBOARD_BEGUN
+    #define KEYBOARD_BEGUN
+        Keyboard.begin();
+    #endif
 }
 
 void KeyboardButton::checkButton(){
-    Serial.print(digitalRead(buttonPin));
     if (digitalRead(buttonPin) == HIGH){
-        Serial.println(keyToPress);
         simulateKeyPress();
     }
     else if (digitalRead(buttonPin) == LOW){
