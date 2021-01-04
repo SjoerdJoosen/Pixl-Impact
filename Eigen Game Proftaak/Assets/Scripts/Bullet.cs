@@ -5,13 +5,7 @@ using UnityEngine;
 public class Bullet : MonoBehaviour {
     public float bulletSpeed = 15f;
     public float bulletDamage = 10f;
-    public float bulletTime = 2f;
     public Rigidbody2D rb;
-
-    private void Start()
-    {
-            Destroy(gameObject, bulletTime);
-    }
 
     private void FixedUpdate()
     {
@@ -25,6 +19,7 @@ public class Bullet : MonoBehaviour {
         if (collision.gameObject.tag == "Enemy")
         {
             Destroy(collision.gameObject);
+            Destroy(gameObject);
         }
     }
 

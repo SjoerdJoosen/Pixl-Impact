@@ -10,7 +10,9 @@ TagManager:
   - Bullet
   - Enemy
   - Coin
-  - PlayerPropertyManager
+  - LevelEnding
+  - Spring
+  - Feet
   layers:
   - Default
   - TransparentFX
