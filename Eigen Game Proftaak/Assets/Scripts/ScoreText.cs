@@ -5,12 +5,14 @@ using TMPro;
 
 public class ScoreText : MonoBehaviour
 {
+    private ArduinoManger arduino;
     public static ScoreText instance;
     public TextMeshProUGUI text;
-    int score;
+    int score = 0;
 
     void Start()
     {
+        arduino = GameObject.FindGameObjectWithTag("Arduino").GetComponent<ArduinoManger>();
         if (instance == null)
         {
             instance = this;
@@ -21,5 +23,6 @@ public class ScoreText : MonoBehaviour
     {
         score += coinValue;
         text.text = score.ToString();
+        arduino.updateCoins(score);
     }
 }

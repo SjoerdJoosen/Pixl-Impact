@@ -9,12 +9,14 @@ public class PlayerDeath : MonoBehaviour
     public Tilemap DeathTiles;
     public ContactPoint2D[] contacts = new ContactPoint2D[1];
     public Vector3 respawnPoint;
-    public HealthManger playerHealth;
+    private ArduinoManger arduino;
 
+    private int health = 6;
 
     private void Start()
     {
         respawnPoint = transform.position;
+        arduino = GameObject.FindGameObjectWithTag("Arduino").GetComponent<ArduinoManger>();
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -22,6 +24,8 @@ public class PlayerDeath : MonoBehaviour
         if (collision.gameObject.name == "FallDetector")
         {
             transform.position = respawnPoint;
+            health--;
+            arduino.updateHealth(health);
         }
 
         if (collision.gameObject.tag == "Checkpoint")
@@ -32,9 +36,11 @@ public class PlayerDeath : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("Enemy") || collision.gameObject.tag == "Checkpoint")
+        if (collision.gameObject.CompareTag("Enemy"))
         {
             transform.position = respawnPoint;
+            health--;
+            arduino.updateHealth(health);
         }
     }
 }

@@ -5,17 +5,25 @@ using UnityEngine;
 public class ArduinoManger : MonoBehaviour
 {
     ArduinoMessageHandler messageHandler;
-    HealthManger health;
-    private int currentHealth;
-    // Start is called before the first frame update
-    void Start()
+
+    public void Start()
     {
-        
+        messageHandler = GameObject.FindGameObjectWithTag("Arduino").GetComponent<ArduinoMessageHandler>();
+        updateHealth(6);
+        updateAmmo(10);
+        updateCoins(0);
     }
 
-    // Update is called once per frame
-    void Update()
+    public void updateHealth(int healthToSend)
     {
-        currentHealth = health.CurrentHealth;
+        messageHandler.sendMessage("HEALTH:" + healthToSend);
+    }
+    public void updateAmmo (int ammoToSend)
+    {
+        messageHandler.sendMessage("AMMO:" + ammoToSend);
+    }
+    public void updateCoins (int coinsToSend)
+    {
+        messageHandler.sendMessage("COINS:" + coinsToSend);
     }
 }

@@ -14,10 +14,11 @@ public class ArduinoMessageHandler : MonoBehaviour
 
 
     //Constructor
-    private ArduinoMessageHandler()
+    public ArduinoMessageHandler()
     {
         startPortCommunication();
     }
+
 
     //sends message to serial output
     public void sendMessage(string message)
@@ -26,20 +27,14 @@ public class ArduinoMessageHandler : MonoBehaviour
         {
             myPort.Write(startChar + message + endChar); //"#AN_EXAMPLE_MESSAGE%"
         }
+        UnityEngine.Debug.Log(startChar + message + endChar);
     }
 
     private void startPortCommunication()
     {
-        try
-        {
-            myPort = new SerialPort();
-            myPort.BaudRate = 9600;
-            myPort.PortName = this.portName;
-            myPort.Open();
-        }
-        catch (Exception)
-        {
-            UnityEngine.Debug.Log("could not connect to arduino port");
-        }
+        myPort = new SerialPort(this.portName, 9600);
+        //myPort.BaudRate = 9600;
+        //myPort.PortName = this.portName;
+        myPort.Open();
     }
 }

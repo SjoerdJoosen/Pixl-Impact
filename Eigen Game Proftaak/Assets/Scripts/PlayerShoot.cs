@@ -7,12 +7,16 @@ public class PlayerShoot : MonoBehaviour {
     public Transform firingPoint;
     public GameObject bulletPrefab;
 
+    private ArduinoManger arduino;
+    private int ammo = 10;
+
     float timeUntilFire;
     PlayerMovement pm;
 
     private void Start()
     {
         pm = gameObject.GetComponent<PlayerMovement>();
+        arduino = GameObject.FindGameObjectWithTag("Arduino").GetComponent<ArduinoManger>();
     }
 
     private void Update()
@@ -22,11 +26,26 @@ public class PlayerShoot : MonoBehaviour {
             Shoot();
             timeUntilFire = Time.time + fireRate;
         }
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            ammo = 10;
+            updateAmmo();
+        }
     }
 
-    void Shoot()
+    private void Shoot()
     {
-        float angle = pm.isFacingRight ? 0f : 180f;
-        Instantiate(bulletPrefab, firingPoint.position, Quaternion.Euler(new Vector3(0f, 0f, angle)));
+        if (ammo != 0)
+        {
+            float angle = pm.isFacingRight ? 0f : 180f;
+            Instantiate(bulletPrefab, firingPoint.position, Quaternion.Euler(new Vector3(0f, 0f, angle)));
+            ammo--;
+            updateAmmo();
+        }
+    }
+
+    private void updateAmmo()
+    {
+        arduino.updateAmmo(ammo);
     }
 }
