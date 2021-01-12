@@ -3,30 +3,34 @@
 #include "messageHandler.h"
 #include "GuiDrawer.h"
 
-StatHandler Health(6);
-StatHandler Ammo (99);
-StatHandler Coins (0);
+//StatHandler Health(6);
+//StatHandler Ammo (10);
+//StatHandler Coins (0);
 
-MessageHandler messageHandler(&Health, &Ammo, &Coins);
+//MessageHandler messageHandler(&Health, &Ammo, &Coins);
 
-GuiDrawer guiDrawer;
+//properties defined in matrix.h
+//RGBmatrixPanel matrix(A, B, C, CLK, LAT, OE, false);
+
+GuiDrawer guiDrawer();
+//GuiDrawer guiDrawer(&matrix);
 
 void setup() {
-  Serial.begin(9600);
-  guiDrawer.drawBaseGui();
+  
+  //guiDrawer.drawBaseGui();
 }
 
 void loop() {
-  messageHandler.recieveMessage();
+  //messageHandler.recieveMessage();
 
   //checks wether the different values have changed since last loop
-  if (Health.checkForChange()){
+  //if (Health.checkForChange()){
 
-  }
-  if (Ammo.checkForChange()){
+ // }
+ // if (Ammo.checkForChange()){
 
-  }
-  if (Coins.checkForChange()){
+ // }
+ // if (Coins.checkForChange()){
 
-  }
+ // }
 }

@@ -12,4 +12,6 @@
 #define B   A1
 #define C   A2
 
+RGBmatrixPanel matrix(A, B, C, CLK, LAT, OE, false);
+
 #endif

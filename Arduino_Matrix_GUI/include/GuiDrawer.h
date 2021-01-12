@@ -3,8 +3,12 @@
 #include <Arduino.h>
 #include "matrix.h"
 
+//RGBmatrixPanel matrix(A, B, C, CLK, LAT, OE, false);
+
 class GuiDrawer {
   private:
+
+  //RGBmatrixPanel * matrix = nullptr;
 
   enum COLOURS{
       BLACK = 0,      //0
@@ -14,6 +18,12 @@ class GuiDrawer {
       DARKER_YELLOW,  //4
       DARKEST_YELLOW, //5
       GRAY            //6
+  };
+
+  enum SHAPES{
+      HEART = 0,      //0
+      AMMO,           //1
+      COIN            //2
   };
 
   const int HEARTSIZE_X = 8;
@@ -34,15 +44,15 @@ class GuiDrawer {
   const int COINSIZE_Y = 7;
   const int COINSHAPE [8][7] = 
   {
-      {0, 0, 4, 4, 4, 0, 0},
-      {0, 4, 3, 3, 3, 4, 0},
-      {4, 3, 3, 4, 3, 3, 4},
-      {4, 3, 3, 4, 3, 3, 4},
-      {4, 3, 3, 4, 3, 3, 4},
-      {4, 3, 3, 4, 3, 3, 4},
-      {0, 4, 3, 3, 3, 4, 0},
-      {0, 0, 4, 4, 4, 0, 0}
-    };
+    {0, 0, 4, 4, 4, 0, 0},
+    {0, 4, 3, 3, 3, 4, 0},
+    {4, 3, 3, 4, 3, 3, 4},
+    {4, 3, 3, 4, 3, 3, 4},
+    {4, 3, 3, 4, 3, 3, 4},
+    {4, 3, 3, 4, 3, 3, 4},
+    {0, 4, 3, 3, 3, 4, 0},
+    {0, 0, 4, 4, 4, 0, 0}
+  };
     
   const int AMMOSIZE_X = 8;
   const int AMMOSIZE_Y = 6;
@@ -58,11 +68,12 @@ class GuiDrawer {
     {3, 3, 5, 3, 3, 5}
   };
 
-  void drawHeart(int startX, int startY);
-
+  void drawShape(SHAPES shape, int startX, int startY);
   void pixelDrawer(COLOURS colourToDraw, int drawX, int drawY);
+  
   public:
   GuiDrawer();
+  //GuiDrawer(RGBmatrixPanel *Matrix);
   void drawBaseGui();
 };
   

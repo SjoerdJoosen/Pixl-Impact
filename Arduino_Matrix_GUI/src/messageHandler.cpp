@@ -66,8 +66,8 @@ void MessageHandler::handleMessage(){
 }
 
 int MessageHandler::getValue(String aMessage){
-    int index = message.indexOf(':');
-    String value = message.substring(index + 1);
+    int index = aMessage.indexOf(':');
+    String value = aMessage.substring(index + 1);
     value.trim();
     int Value = value.toInt();
     Serial.println("getting value from string");
