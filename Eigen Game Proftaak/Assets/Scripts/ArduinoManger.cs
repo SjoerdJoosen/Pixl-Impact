@@ -4,14 +4,29 @@ using UnityEngine;
 
 public class ArduinoManger : MonoBehaviour
 {
+    //these fields are used so i can reopen the port 1 second after starting the program
+    private bool portHasOpened = false;
+    private float timeLeft = 0.5f;
+
     ArduinoMessageHandler messageHandler;
 
     public void Start()
     {
         messageHandler = GameObject.FindGameObjectWithTag("Arduino").GetComponent<ArduinoMessageHandler>();
-        updateHealth(6);
-        updateAmmo(10);
-        updateCoins(0);
+    }
+
+    public void Update()
+    {
+        if (portHasOpened == false)
+        {
+            timeLeft -= Time.deltaTime;
+            if (timeLeft < 0)
+            {
+                messageHandler.reopen();
+                sendStartValues();
+                portHasOpened = true;
+            }
+        }
     }
 
     public void updateHealth(int healthToSend)
@@ -25,5 +40,12 @@ public class ArduinoManger : MonoBehaviour
     public void updateCoins (int coinsToSend)
     {
         messageHandler.sendMessage("COINS:" + coinsToSend);
+    }
+
+    private void sendStartValues()
+    {
+        updateHealth(6);
+        updateAmmo(10);
+        updateCoins(0);
     }
 }

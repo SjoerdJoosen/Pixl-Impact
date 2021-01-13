@@ -7,11 +7,12 @@ using UnityEngine;
 public class ArduinoMessageHandler : MonoBehaviour
 {
     //port fields
-    private SerialPort myPort;
-    private string portName = "COM4";
+    static private SerialPort myPort;
+    private string portName = "COM7";
     private char startChar = '#';
     private char endChar = '%';
 
+    
 
     //Constructor
     public ArduinoMessageHandler()
@@ -32,9 +33,18 @@ public class ArduinoMessageHandler : MonoBehaviour
 
     private void startPortCommunication()
     {
-        myPort = new SerialPort(this.portName, 9600);
-        //myPort.BaudRate = 9600;
-        //myPort.PortName = this.portName;
+        myPort = new SerialPort();
+        myPort.BaudRate = 9600;
+        myPort.PortName = this.portName;
+        
+        myPort.Close();
         myPort.Open();
+    }
+
+    public void reopen()
+    {
+        myPort.Close();
+        myPort.Open();
+        UnityEngine.Debug.Log("port reopened");
     }
 }
