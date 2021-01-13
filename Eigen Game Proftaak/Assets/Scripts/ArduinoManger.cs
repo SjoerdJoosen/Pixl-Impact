@@ -6,7 +6,7 @@ public class ArduinoManger : MonoBehaviour
 {
     //these fields are used so i can reopen the port 1 second after starting the program
     private bool portHasOpened = false;
-    private float timeLeft = 0.5f;
+    private float timeLeft = 0.1f;
 
     ArduinoMessageHandler messageHandler;
 
