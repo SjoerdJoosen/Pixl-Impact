@@ -20,7 +20,7 @@ public class PlayerMovement : MonoBehaviour {
     private void Update() {
         mx = Input.GetAxis("Horizontal");
 
-        if (Input.GetButtonDown("Jump")  && isGrounded()) {
+        if ((Input.GetButtonDown("Jump") || Input.GetKeyDown(KeyCode.W))  && isGrounded()) {
             Jump();
         }
 
