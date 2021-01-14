@@ -5,11 +5,6 @@ MessageHandler::MessageHandler(StatHandler* Health, StatHandler* Ammo, StatHandl
     health = Health;
     ammo = Ammo;
     coins = Coins;
-    initMessage();
-}
-
-void MessageHandler::initMessage(){
-    Serial.begin(9600);
 }
 
 void MessageHandler::recieveMessage(){
@@ -19,7 +14,6 @@ void MessageHandler::recieveMessage(){
         //checks if the read char is the starting char, 
         //if so it empties the message and sets isReading to true
         if (readChar == startChar){
-            Serial.println("start char has been found");
             isReading = true;
             message = "";
         }
@@ -36,7 +30,6 @@ void MessageHandler::recieveMessage(){
             //adds read character to message string
             else {
                 message += readChar;
-                Serial.println("is reading");
             }
         }
     }
@@ -70,6 +63,5 @@ int MessageHandler::getValue(String aMessage){
     String value = aMessage.substring(index + 1);
     value.trim();
     int Value = value.toInt();
-    Serial.println("getting value from string");
     return Value;
 }

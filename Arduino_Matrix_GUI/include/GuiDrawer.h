@@ -1,14 +1,22 @@
 #ifndef GUIDRAWER_H
 #define GUIDRAWER_H
 #include <Arduino.h>
-#include "matrix.h"
+#include "RGBmatrixPanel.h"
+#include <SPI.h>
+#include <Adafruit_I2CDevice.h>
 
-//RGBmatrixPanel matrix(A, B, C, CLK, LAT, OE, false);
+#define CLK  8 
+#define OE   9
+#define LAT 10
+#define A   A0
+#define B   A1
+#define C   A2
 
 class GuiDrawer {
   private:
 
-  //RGBmatrixPanel * matrix = nullptr;
+
+  RGBmatrixPanel matrix;
 
   enum COLOURS{
       BLACK = 0,      //0
@@ -17,13 +25,13 @@ class GuiDrawer {
       YELLOW,         //3
       DARKER_YELLOW,  //4
       DARKEST_YELLOW, //5
-      GRAY            //6
+      ORANGE          //6
   };
 
   enum SHAPES{
-      HEART = 0,      //0
-      AMMO,           //1
-      COIN            //2
+      HEART_SHAPE = 0,      //0
+      AMMO_SHAPE,           //1
+      COIN_SHAPE            //2
   };
 
   const int HEARTSIZE_X = 8;
@@ -72,9 +80,17 @@ class GuiDrawer {
   void pixelDrawer(COLOURS colourToDraw, int drawX, int drawY);
   
   public:
+
+  enum STATS{
+      HEALTH_STAT = 0,     //1
+      AMMO_STAT,           //1
+      COINS_STAT           //2
+  };
+
   GuiDrawer();
-  //GuiDrawer(RGBmatrixPanel *Matrix);
+  void initGuiDrawer();
   void drawBaseGui();
+  void updateStat(STATS statToUpdate, int statValue);
 };
   
 #endif

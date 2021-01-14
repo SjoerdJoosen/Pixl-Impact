@@ -9,12 +9,10 @@ StatHandler::StatHandler(int baseStat){
 
 int StatHandler::getStat(){
     return statValue;
-    Serial.println("stat got");
 }
 
 void StatHandler::setStat(int valueToSetTo){
     this -> statValue = valueToSetTo;
-    Serial.println("stat set");
 }
 
 bool StatHandler::checkForChange(){

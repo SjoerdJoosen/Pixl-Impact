@@ -3,34 +3,32 @@
 #include "messageHandler.h"
 #include "GuiDrawer.h"
 
-//StatHandler Health(6);
-//StatHandler Ammo (10);
-//StatHandler Coins (0);
+StatHandler Health(6);
+StatHandler Ammo (10);
+StatHandler Coins (0);
 
-//MessageHandler messageHandler(&Health, &Ammo, &Coins);
+MessageHandler messageHandler(&Health, &Ammo, &Coins);
 
-//properties defined in matrix.h
-//RGBmatrixPanel matrix(A, B, C, CLK, LAT, OE, false);
-
-GuiDrawer guiDrawer();
-//GuiDrawer guiDrawer(&matrix);
+GuiDrawer guiDrawer;
 
 void setup() {
-  
-  //guiDrawer.drawBaseGui();
+  Serial.begin(9600);
+  guiDrawer.initGuiDrawer();
+  guiDrawer.drawBaseGui();
 }
 
-void loop() {
-  //messageHandler.recieveMessage();
+void loop()
+{
+  messageHandler.recieveMessage();
 
-  //checks wether the different values have changed since last loop
-  //if (Health.checkForChange()){
-
- // }
- // if (Ammo.checkForChange()){
-
- // }
- // if (Coins.checkForChange()){
-
- // }
+  // checks wether the different values have changed since last loop
+  if (Health.checkForChange()){
+    guiDrawer.updateStat(guiDrawer.HEALTH_STAT, Health.getStat());
+  }
+  if (Ammo.checkForChange()){
+    guiDrawer.updateStat(guiDrawer.AMMO_STAT, Ammo.getStat());  
+  }
+  if (Coins.checkForChange()){
+    guiDrawer.updateStat(guiDrawer.COINS_STAT, Coins.getStat());  
+  }
 }
